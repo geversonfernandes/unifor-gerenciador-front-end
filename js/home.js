@@ -123,9 +123,10 @@ document.addEventListener('DOMContentLoaded', async () => {
           window.location.href = '/login.html';
         }
       } catch (error) {
-        console.error('Erro ao fazer logout:', error);
+        console.error('Erro ao fazer logout: ', error);
       }
     });
 
   loadEventList();
 });
+

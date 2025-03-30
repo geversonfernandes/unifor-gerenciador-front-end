@@ -8,11 +8,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const token = getCookie('token');
 
-  if (!token) {
-    window.location.href = '/login.html';
-    return;
-  }
-
   const apiUrl = 'https://uniforgerenciadorbackend-bqmzywii.b4a.run/api/events';
 
   const eventList = document.getElementById('event-list');
@@ -129,4 +124,3 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   loadEventList();
 });
-

@@ -8,7 +8,7 @@ cadastroForm.addEventListener('submit', async function (event) {
   const password = document.getElementById('password').value
 
   try {
-    const response = await axios.post('https://link-rota-back', {
+    const response = await axios.post('https://uniforgerenciadorbackend-bqmzywii.b4a.run/api/user/register', {
       name: name,
       email: email,
       password: password,
